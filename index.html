@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/8d073d04ca.js" crossorigin="anonymous"></script>
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-9">
+                <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSla9_rvxeHHYHEjOvHYdLZH5n3wArWvJ6uqQ&usqp=CAU" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    Instagram
+                  </a>
+                </div>
+                </nav>  
+            </div> 
+            <div class="col-2">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="message-text" class="col-form-label">Caption:</label>
+                              <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-body">
+                            <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-camera" style="color: #000000;"></i></button>
+                            <button type="button" class="btn btn-outline-dark"><i class="fa-sharp fa-solid fa-location-dot" style="color: #000000;"></i></button>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-1">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-sharp fa-solid fa-gear" style="color: #f7f7f7;"></i> 
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item text-danger" href="#">Log out</a></li> 
+                    </ul>
+                  </div>
+            </div> 
+        </div>
+        <div class="row">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-stop"></i></button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                        <div class="col-4 mb-1 p-1">
+                            <img src="https://generated-assets-cdn.shutterstock.com/asset-generation-7dce5537-6498-49dc-8dc7-726eb0536b60-3-watermarked.jpg" class="img-fluid" alt="Imagen 1">
+                          </div>
+                          <div class="col-4 mb-1 p-1">
+                            <img src="https://generated-assets-cdn.shutterstock.com/asset-generation-7dce5537-6498-49dc-8dc7-726eb0536b60-1-watermarked.jpg" class="img-fluid" alt="Imagen 2">
+                          </div>
+                          <div class="col-4 mb-1 p-1">
+                            <img src="https://generated-assets-cdn.shutterstock.com/asset-generation-7dce5537-6498-49dc-8dc7-726eb0536b60-0-watermarked.jpg" class="img-fluid" alt="Imagen 3">
+                          </div>
+                          <div class="col-4 mb-1 p-1">
+                            <img src="https://generated-assets-cdn.shutterstock.com/asset-generation-52cc29a6-3f93-4fa3-8ebf-7af49a534f65-2-watermarked.jpg" class="img-fluid" alt="Imagen 4">
+                          </div>
+                          <div class="col-4 mb-1 p-1">
+                            <img src="https://generated-assets-cdn.shutterstock.com/asset-generation-ff173cff-6b54-43c5-a4ef-798f9aad4358-1-watermarked.jpg" class="img-fluid" alt="Imagen 5">
+                          </div>
+                          <div class="col-4 mb-1 p-1">
+                            <img src="https://generated-assets-cdn.shutterstock.com/asset-generation-ff173cff-6b54-43c5-a4ef-798f9aad4358-0-watermarked.jpg" class="img-fluid" alt="Imagen 6">
+                          </div>
+                          <div class="col-4 mb-1 p-1">
+                            <img src="https://generated-assets-cdn.shutterstock.com/asset-generation-3d4a1075-c51a-45c8-8cb5-c49d8278b3d9-0-watermarked.jpg" class="img-fluid" alt="Imagen 4">
+                          </div>
+                          <div class="col-4 mb-1 p-1">
+                            <img src="https://generated-assets-cdn.shutterstock.com/asset-generation-fca0d81f-b3c2-4213-87ff-c0223d4ec24f-0-watermarked.jpg" class="img-fluid" alt="Imagen 5">
+                          </div>
+                          <div class="col-4 mb-1 p-1">
+                            <img src="https://generated-assets-cdn.shutterstock.com/asset-generation-ff173cff-6b54-43c5-a4ef-798f9aad4358-3-watermarked.jpg" class="img-fluid" alt="Imagen 6">
+                          </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row">
+                        <div class="card col-6 offset-3 mb-3">
+                            <div class="card-body">
+                              <h3 class="card-title">My crazy dog Sr.Ecko!</h3>
+                              <p class="card-date"><small class="text-body-secondary position-absolute top-0 end-0 m-1"><strong>08/26</strong></small></p>
+                              <img src="https://generated-assets-cdn.shutterstock.com/asset-generation-7dce5537-6498-49dc-8dc7-726eb0536b60-3-watermarked.jpg" class="card-img-top mx-auto" alt="...">
+                              <h5 class="card-likes"><strong>204 Likes</strong></h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="row">
+                        <div class="card col-6 offset-3 mb-3">
+                            <div class="card-body">
+                              <h3 class="card-title">Lazy Sr.Ecko!</h3>
+                              <p class="card-date"><small class="text-body-secondary position-absolute top-0 end-0 m-1"><strong>10/14</strong></small></p>
+                              <img src="https://okdiario.com/img/2020/10/16/razas-de-perros_-weimaraner-1.jpg" class="card-img-top mx-auto" alt="...">
+                              <h5 class="card-likes"><strong>1204 Likes</strong></h5>
+                              <p class="card-text">Un día por el bosque.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="row">
+                        <div class="card col-6 offset-3 mb-3">
+                            <div class="card-body">
+                              <h3 class="card-title"> Sr.Ecko's crew</h3>
+                              <p class="card-date"><small class="text-body-secondary position-absolute top-0 end-0 m-1"><strong>01/25</strong></small></p>
+                              <img src="https://huisdierengids.com/wp-content/uploads/2021/08/Weimaraner-682x450.jpeg" class="card-img-top mx-auto" alt="...">
+                              <h5 class="card-likes"><strong>34204 Likes</strong></h5>
+                              <p class="card-text">Brotherhood.</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>
